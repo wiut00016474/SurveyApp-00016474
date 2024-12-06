@@ -1,5 +1,84 @@
 [
   {
+    "ContainingType": "SurveyApp.Controllers.ResponseController",
+    "Method": "GetResponses",
+    "RelativePath": "api/Response",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SurveyApp.Controllers.ResponseController",
+    "Method": "CreateResponse",
+    "RelativePath": "api/Response",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "response",
+        "Type": "SurveyApp.Models.Response",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SurveyApp.Controllers.ResponseController",
+    "Method": "GetResponse",
+    "RelativePath": "api/Response/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SurveyApp.Controllers.ResponseController",
+    "Method": "UpdateResponse",
+    "RelativePath": "api/Response/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "response",
+        "Type": "SurveyApp.Models.Response",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SurveyApp.Controllers.ResponseController",
+    "Method": "DeleteResponse",
+    "RelativePath": "api/Response/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SurveyApp.Controllers.SurveyController",
     "Method": "GetSurveys",
     "RelativePath": "api/Survey",

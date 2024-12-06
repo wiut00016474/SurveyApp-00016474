@@ -5,6 +5,7 @@ using SurveyApp.Models;
 using System.Linq;
 using System.Threading.Tasks;
 
+//16474
 namespace SurveyApp.Controllers
 {
     [Route("api/[controller]")]
@@ -20,10 +21,12 @@ namespace SurveyApp.Controllers
         }
 
         // GET: api/survey
+         
         [HttpGet]
         public async Task<IActionResult> GetSurveys()
         {
-            var surveys = await _context.Surveys.ToListAsync();
+            //connected with responses by surveyid
+            var surveys = await _context.Surveys.Include(s => s.Responses).ToListAsync();
             return Ok(surveys);
         }
 

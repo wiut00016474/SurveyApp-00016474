@@ -26,7 +26,7 @@ export class ResponseComponent implements OnInit {
 
   
 
-
+  //16474
   getResponses() {
     this.responseService.getResponses().subscribe((data: any[]) => {
       console.log("responses", data);

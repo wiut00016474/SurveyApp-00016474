@@ -1,4 +1,7 @@
-﻿namespace SurveyApp.Models
+﻿using System.Text.Json.Serialization;
+
+//16474
+namespace SurveyApp.Models
 {
     public class Response
     {
@@ -7,6 +10,7 @@
         public int SurveyId { get; set; }
 
         // Navigation property
-        public Survey Survey { get; set; }
+        [JsonIgnore]
+        public Survey? Survey { get; set; }
     }
 }

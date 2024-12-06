@@ -66,4 +66,5 @@ C:\Users\Muxlisa\source\repos\SurveyApp\SurveyApp\obj\Debug\net6.0\refint\Survey
 C:\Users\Muxlisa\source\repos\SurveyApp\SurveyApp\obj\Debug\net6.0\SurveyApp.pdb
 C:\Users\Muxlisa\source\repos\SurveyApp\SurveyApp\obj\Debug\net6.0\SurveyApp.genruntimeconfig.cache
 C:\Users\Muxlisa\source\repos\SurveyApp\SurveyApp\obj\Debug\net6.0\ref\SurveyApp.dll
+C:\Users\Muxlisa\source\repos\SurveyApp\SurveyApp\obj\Debug\net6.0\SurveyApp.sourcelink.json
 C:\Users\Muxlisa\source\repos\SurveyApp\SurveyApp\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt

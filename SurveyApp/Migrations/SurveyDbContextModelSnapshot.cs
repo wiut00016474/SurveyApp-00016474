@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SurveyApp.Data;
 
 #nullable disable
-
+//16474
 namespace SurveyApp.Migrations
 {
     [DbContext(typeof(SurveyDbContext))]
