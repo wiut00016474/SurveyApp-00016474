@@ -1,5 +1,24 @@
-<h1>Submit your response</h1>
-<div>
-  <textarea [(ngModel)]="answer" placeholder="Your answer"></textarea>
-  <button (click)="submitResponse()">Submit</button>
-</div>
+<h1>Responses</h1>
+<ul>
+  <li *ngFor="let response of responses">
+    {{ response.answer }} (Survey ID: {{ response.surveyId }})
+    <button (click)="editResponse(response)">Edit</button>
+    <button (click)="deleteResponse(response.responseId)">Delete</button>
+  </li>
+</ul>
+
+<h2>Submit your Response</h2>
+<form (ngSubmit)="createResponse()">
+  <input [(ngModel)]="newResponse.answer" name="answer" placeholder="Answer" required />
+  <input [(ngModel)]="newResponse.surveyId" name="surveyId" placeholder="Survey ID" required />
+  <button type="submit">Create</button>
+</form>
+
+<h2 *ngIf="editingResponse">Edit Response</h2>
+<form *ngIf="editingResponse" (ngSubmit)="updateResponse()">
+  <input [(ngModel)]="updatedResponse.answer" name="answer" placeholder="Answer" required />
+  <input [(ngModel)]="updatedResponse.surveyId" name="surveyId" placeholder="Survey ID" required />
+  <button type="submit">Update Response</button>
+  <button type="button" (click)="cancelEdit()">Cancel</button>
+</form>
+
